@@ -88,3 +88,21 @@ Note: On future deploys of the application, you do not need to run the m365 spo 
 
 If you want to create a new build, you will need to revert back to nodejs 8.
 ```nvm use 8```
+
+To change the list name requirement from Toast to something else
+1. edit ~/jquery-application-toastr/src/services/toastService/ToastService.ts
+Look for lines:
+```
+//Breaking up the URL like this isn't necessary, but can be easier to update
+private static readonly apiEndPoint: string = "_api/web/lists/getbytitle('Toast')/items";
+```
+replace getbytitle('Toast') with getbytitle('Alerts'), or whatever you want the List name to be.
+2. `cd ~/jquery-application-toastr`
+3. `nvm use 8`
+4. `gulp build`
+5. `gulp bundle --ship`
+6. `gulp package-solution --ship`
+7. Update the previously created SP "Toast" list (See Sharepoint: Manually create the list) name to the new getbytitle('XXXX') entry
+8. Upload the updated toastr.sppkg to Sharepoint, you might need to delete it first. 
+
+Sharepoint should now be reading from the updated list name in Sharepoint. 
