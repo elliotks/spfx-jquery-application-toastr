@@ -97,6 +97,7 @@ Look for lines:
 private static readonly apiEndPoint: string = "_api/web/lists/getbytitle('Toast')/items";
 ```
 replace getbytitle('Toast') with getbytitle('Alerts'), or whatever you want the List name to be.
+
 2. `cd ~/jquery-application-toastr`
 3. `nvm use 8`
 4. `gulp build`
