@@ -18,11 +18,14 @@ https://github.com/pnp/sp-dev-fx-extensions/tree/main/samples/jquery-application
 12. `npm install -g gulp gulp-cli`
 13. `npm install npm@4 --save-dev` 
 14. Confirm you are using Nodejs version 8 and NPM version 6 `node -v ; npm -v`
-15. `npm install`
-16. Confirm gulp local version 3.9.1 is available `gulp --version` 
-17. `gulp build`
-18. `gulp bundle --ship`
-19. `gulp package-solution --ship`
+15. `npm install` you will see the following Warning. 
+`npm WARN notsup Unsupported engine for karma@0.13.22: wanted: {"node":"0.10 || 0.12 || 4 || 5"} (current: {"node":"8.17.0","npm":"6.13.4"})
+npm WARN notsup Not compatible with your version of node/npm: karma@0.13.22`
+17. `npm install` run npm install again, since the first npm install installs the npm@4 in dev packages. 
+18. Confirm gulp local version 3.9.1 is available `gulp --version` 
+19. `gulp build`
+20. `gulp bundle --ship`
+21. `gulp package-solution --ship`
 
 Upload ~/jquery-application-toastr/sharepoint/solution/toastr.sppkg to Sharepoint Apps, enable for all sites.
 ### Sharepoint: Manually create the list
