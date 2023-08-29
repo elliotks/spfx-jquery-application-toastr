@@ -6,12 +6,12 @@ https://github.com/pnp/sp-dev-fx-extensions/tree/main/samples/jquery-application
 
 1. `sudo apt install bzip2`
 2. `sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
-3. `mkdir git`
-4. `cd git`
-5. `git clone https://github.com/pnp/sp-dev-fx-extensions.git`
-6. `cd ~/`
-7. `cp -aR ~/git/sp-dev-fx-extensions/samples/jquery-application-toastr ~/`
-8. `source ~/.bashrc`
+3. `source ~/.bashrc`
+4. `mkdir git`
+5. `cd git`
+6. `git clone https://github.com/pnp/sp-dev-fx-extensions.git`
+7. `cd ~/`
+8. `cp -aR ~/git/sp-dev-fx-extensions/samples/jquery-application-toastr ~/`
 9. `cd ~/jquery-application-toastr`
 10. `nvm install 8`
 11. `nvm use 8`
