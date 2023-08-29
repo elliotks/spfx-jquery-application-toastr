@@ -4,24 +4,25 @@ https://learn.microsoft.com/en-us/sharepoint/dev/spfx/compatibility
 # SPFx Steps
 https://github.com/pnp/sp-dev-fx-extensions/tree/main/samples/jquery-application-toastr
 
-1. `mkdir git`
-2. `cd git`
-3. `git clone https://github.com/pnp/sp-dev-fx-extensions.git`
-4. `cd ~/`
-5. `cp -aR ~/git/sp-dev-fx-extensions/samples/jquery-application-toastr ~/`
-6. `sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
-7. `source ~/.bashrc`
-8. `cd ~/jquery-application-toastr`
-9. `nvm install 8`
-10. `nvm use 8`
-11. `npm install -g gulp gulp-cli`
-12. `npm install npm@4 --save-dev` 
-13. Confirm you are using Nodejs version 8 and NPM version 6 `node -v ; npm -v`
-14. `npm install`
-15. Confirm gulp local version 3.9.1 is available `gulp --version` 
-16. `gulp build`
-17. `gulp bundle --ship`
-18. `gulp package-solution --ship`
+1. `sudo apt install bzip2`
+2. `mkdir git`
+3. `cd git`
+4. `git clone https://github.com/pnp/sp-dev-fx-extensions.git`
+5. `cd ~/`
+6. `cp -aR ~/git/sp-dev-fx-extensions/samples/jquery-application-toastr ~/`
+7. `sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
+8. `source ~/.bashrc`
+9. `cd ~/jquery-application-toastr`
+10. `nvm install 8`
+11. `nvm use 8`
+12. `npm install -g gulp gulp-cli`
+13. `npm install npm@4 --save-dev` 
+14. Confirm you are using Nodejs version 8 and NPM version 6 `node -v ; npm -v`
+15. `npm install`
+16. Confirm gulp local version 3.9.1 is available `gulp --version` 
+17. `gulp build`
+18. `gulp bundle --ship`
+19. `gulp package-solution --ship`
 
 Upload ~/jquery-application-toastr/sharepoint/solution/toastr.sppkg to Sharepoint Apps, enable for all sites.
 ### Sharepoint: Manually create the list
