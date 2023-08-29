@@ -19,14 +19,13 @@ https://github.com/pnp/sp-dev-fx-extensions/tree/main/samples/jquery-application
 13. `npm install npm@4 --save-dev` 
 14. Confirm you are using Nodejs version 8 and NPM version 6 `node -v ; npm -v`
 15. `npm install` you will see the following Warning.
-
 `npm WARN notsup Unsupported engine for karma@0.13.22: wanted: {"node":"0.10 || 0.12 || 4 || 5"} (current: {"node":"8.17.0","npm":"6.13.4"})
 npm WARN notsup Not compatible with your version of node/npm: karma@0.13.22`
-17. `npm install` run npm install again, since the first npm install installs the npm@4 in dev packages. 
-18. Confirm gulp local version 3.9.1 is available `gulp --version` 
-19. `gulp build`
-20. `gulp bundle --ship`
-21. `gulp package-solution --ship`
+16. `npm install` run npm install again, since the first npm install installs the npm@4 in dev packages. 
+17. Confirm gulp local version 3.9.1 is available `gulp --version` 
+18. `gulp build`
+19. `gulp bundle --ship`
+20. `gulp package-solution --ship`
 
 Upload ~/jquery-application-toastr/sharepoint/solution/toastr.sppkg to Sharepoint Apps, enable for all sites.
 ### Sharepoint: Manually create the list
@@ -71,14 +70,21 @@ You are now connected to your Sharepoint site.
 6. Update the following command. Replacing --webUrl with the site you want to show Toast notifications on.
 Update --clientSideComponentId with your application Id. This is located in
 ~/jquery-application-toastr/src/extensions/spfxToastr/SpfxToastrApplicationCustomizer.manifest.json - "id". Since we are working off a specific example, you will not need to update it since it will be the same as the current value.
+You can also run this command to query the id
+```
+cat ~/jquery-application-toastr/src/extensions/spfxToastr/SpfxToastrApplicationCustomizer.manifest.json | grep -o '"id": *"[^"]*"'
+```
 
-Then run it.
-
+Command to update: 
 ```
 m365 spo customaction add --webUrl https://SPTENANT.sharepoint.com/sites/SampleSite --title "Toastr Notifications" --name "jquery-application-toastr" --location "ClientSideExtension.ApplicationCustomizer" --clientSideComponentId a861c815-e425-416d-9520-04bcdf557e27 --clientSideComponentProperties ''
 ```
 
+Then run the updated command.
+
 After the command completes, refresh the site. You should see the Toast Notification. 
+
+Note: On future deploys of the application, you do not need to run the m365 spo customaction command again. 
 
 If you want to create a new build, you will need to revert back to nodejs 8.
 ```nvm use 8```
