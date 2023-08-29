@@ -5,12 +5,12 @@ https://learn.microsoft.com/en-us/sharepoint/dev/spfx/compatibility
 https://github.com/pnp/sp-dev-fx-extensions/tree/main/samples/jquery-application-toastr
 
 1. `sudo apt install bzip2`
-2. `mkdir git`
-3. `cd git`
-4. `git clone https://github.com/pnp/sp-dev-fx-extensions.git`
-5. `cd ~/`
-6. `cp -aR ~/git/sp-dev-fx-extensions/samples/jquery-application-toastr ~/`
-7. `sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
+2. `sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
+3. `mkdir git`
+4. `cd git`
+5. `git clone https://github.com/pnp/sp-dev-fx-extensions.git`
+6. `cd ~/`
+7. `cp -aR ~/git/sp-dev-fx-extensions/samples/jquery-application-toastr ~/`
 8. `source ~/.bashrc`
 9. `cd ~/jquery-application-toastr`
 10. `nvm install 8`
