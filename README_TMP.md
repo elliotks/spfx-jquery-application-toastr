@@ -84,7 +84,7 @@ Then run the updated command.
 
 After the command completes, refresh the site. You should see the Toast Notification. 
 
-Note: On future deploys of the application, you do not need to run the m365 spo customaction command again. 
+### Note: On future deploys of the application, you do not need to run the m365 spo customaction command again. 
 
 If you want to create a new build, you will need to revert back to nodejs 8.
 ```nvm use 8```
