@@ -70,19 +70,13 @@ export default class SpfxToastrApplicationCustomizer extends BaseApplicationCust
       //We are unable to use the ms-bgColor styles since the Toast CSS loads
       // later and takes precedence, so we use our own color classes
       // For more background on this issue, see this article: https://dev.office.com/sharepoint/docs/spfx/web-parts/guidance/office-ui-fabric-integration
-      toastr.options.titleClass = "ms-font-m ms-fontWeight-semibold";
-      toastr.options.messageClass = "ms-font-s";
+      toastr.options.titleClass = `${styles.toastTitle}`;
+      toastr.options.messageClass = `${styles.toastMessage}`;
       toastr.options.iconClasses = {
         info: `${styles.info} ${styles.fabricIcon} ${getIconClassName("Info")}`,
-        warning: `${styles.warning} ${styles.fabricIcon} ${getIconClassName(
-          "Warning"
-        )}`,
-        error: `${styles.error} ${styles.fabricIcon} ${getIconClassName(
-          "Error"
-        )}`,
-        success: `${styles.success} ${styles.fabricIcon} ${getIconClassName(
-          "Completed"
-        )}`,
+        warning: `${styles.warning} ${styles.fabricIcon} ${getIconClassName("Warning")}`,
+        error: `${styles.error} ${styles.fabricIcon} ${getIconClassName("Error")}`,
+        success: `${styles.success} ${styles.fabricIcon} ${getIconClassName("Completed")}`,
       };
 
       //***********************
