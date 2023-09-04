@@ -12,7 +12,6 @@
     }
   },
   "externals": {
-    "jquery": "https://code.jquery.com/jquery-2.2.4.min.js",
     "toastr": "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
   },
   "localizedResources": {
