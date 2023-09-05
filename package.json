@@ -19,6 +19,7 @@
     "@microsoft/sp-core-library": "1.17.4",
     "@microsoft/sp-dialog": "1.17.4",
     "@types/es6-promise": "3.3.0",
+    "@uifabric/icons": "^7.9.5",
     "@uifabric/styling": "^7.25.1",
     "tslib": "2.6.2"
   },

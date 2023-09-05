@@ -1,3 +1,4 @@
+process.env.NODE_OPTIONS = '--experimental-vm-modules --icu-data-dir=node_modules/full-icu';
 import { override } from "@microsoft/decorators";
 import { BaseApplicationCustomizer } from "@microsoft/sp-application-base";
 import { Log } from "@microsoft/sp-core-library";
