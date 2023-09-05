@@ -24,11 +24,8 @@ $ms-blue:                       "[theme:blue, default:#0078d7]";
 	
 		&:before {
 			position: fixed;
-			-webkit-font-smoothing: antialiased;
 			font-style: normal;
 			font-weight: normal;
-			speak: none;
-			font-family: "Fluent MDL2 Hybrid Icons";
 			font-size: 28px;
 			margin: 4px 0 0 -36px;
 		}
